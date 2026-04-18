@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baan Chao Khun Onsen — Private Yield Asset, Udon Thani</title>
+  <meta name="description" content="Premium investment opportunity. ROI 15–18%. 400m from Udon Thani Regional Medical Centre." />
+
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind custom config (must stay inline — CDN requirement) -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            slate: { 900: '#0f172a', 800: '#1e293b', 700: '#334155' },
+            amber: { 500: '#f59e0b', 400: '#fbbf24', 300: '#fcd34d' },
+            stone: { 100: '#f5f5f4', 200: '#e7e5e4', 400: '#a8a29e', 500: '#78716c' },
+          },
+          fontFamily: {
+            display: ['Cormorant Garamond', 'serif'],
+            body:    ['Sarabun', 'sans-serif'],
+            thai:    ['Noto Serif Thai', 'serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Sarabun:wght@200;300;400;500;600&family=Noto+Serif+Thai:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- AOS — Animate on Scroll -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <!-- Project stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════════════════
+     NAVIGATION
+══════════════════════════════════════════════════════════════ -->
+<nav id="nav" class="fixed top-0 left-0 right-0 z-50 py-4 px-6 md:px-12 flex items-center justify-between">
+  <a href="#hero" class="flex items-center gap-3 group">
+    <div class="w-10 h-10 bg-amber-500/20 rounded-full flex items-center justify-center border border-amber-500/30">
+      <span class="text-amber-400 font-display text-lg">บ</span>
+    </div>
+    <span class="font-display text-stone-100 text-sm tracking-widest uppercase hidden sm:block">BCK Onsen</span>
+  </a>
+  <div class="hidden md:flex items-center gap-8 text-xs tracking-widest uppercase text-stone-400 font-light">
+    <a href="#location"   class="hover:text-amber-400 transition-colors"><span class="lang-th">ทำเล</span><span class="lang-en">Location</span></a>
+    <a href="#project"    class="hover:text-amber-400 transition-colors"><span class="lang-th">โครงการ</span><span class="lang-en">Project</span></a>
+    <a href="#financials" class="hover:text-amber-400 transition-colors"><span class="lang-th">การเงิน</span><span class="lang-en">Financials</span></a>
+    <a href="#calculator" class="hover:text-amber-400 transition-colors"><span class="lang-th">คำนวณ ROI</span><span class="lang-en">ROI Calc</span></a>
+    <a href="#legal"      class="hover:text-amber-400 transition-colors"><span class="lang-th">สิทธิ์</span><span class="lang-en">Legal</span></a>
+    <a href="#contact"    class="hover:text-amber-400 transition-colors"><span class="lang-th">ติดต่อ</span><span class="lang-en">Contact</span></a>
+  </div>
+  <div class="flex items-center gap-3">
+    <button class="lang-toggle-btn" id="langToggle" onclick="toggleLang()">
+      <span id="langFlag">🇬🇧</span><span id="langLabel">EN</span>
+    </button>
+    <a href="#contact" class="btn-gold text-xs py-2 px-5">
+      <span class="lang-th">ติดต่อ</span><span class="lang-en">Request Memo</span>
+    </a>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════════════════════ -->
+<section id="hero" class="relative">
+
+  <div id="particles" class="absolute inset-0 overflow-hidden pointer-events-none"></div>
+
+  <!-- Gold corner accents -->
+  <div class="absolute top-0 right-0 w-px h-40 bg-gradient-to-b from-amber-500 to-transparent opacity-50"></div>
+  <div class="absolute top-0 right-0 w-40 h-px bg-gradient-to-l from-amber-500 to-transparent opacity-50"></div>
+  <div class="absolute bottom-20 left-0 w-px h-40 bg-gradient-to-t from-amber-500 to-transparent opacity-30"></div>
+
+  <div class="relative z-10 max-w-6xl mx-auto px-6 md:px-12 pt-32 pb-24">
+
+    <!-- Eyebrow -->
+    <div class="flex items-center gap-4 mb-8" data-aos="fade-right" data-aos-duration="800">
+      <div class="gold-line-left"></div>
+      <span class="section-label">
+        <span class="lang-th">โอกาสการลงทุนพิเศษ · อุดรธานี, ประเทศไทย</span>
+        <span class="lang-en">Private Investment Opportunity · Udon Thani, Thailand</span>
+      </span>
+    </div>
+
+    <!-- Headline -->
+    <h1 class="font-display text-stone-100 font-light leading-tight mb-6"
+        style="font-size:clamp(2.4rem,7vw,5.5rem);"
+        data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+      Baan Chao Khun<br />
+      <em class="text-amber-400 not-italic">Onsen</em>
+    </h1>
+
+    <!-- Sub-headline -->
+    <p class="text-stone-400 font-light text-lg md:text-xl max-w-2xl leading-relaxed mb-3"
+       data-aos="fade-up" data-aos-delay="200">
+      The Prime Investment in Medical Hospitality, Udon Thani
+    </p>
+
+    <!-- Investor badges -->
+    <div class="flex flex-wrap gap-3 mb-6" data-aos="fade-up" data-aos-delay="260">
+      <span class="inline-flex items-center gap-2 border border-amber-500/40 bg-amber-500/10 text-amber-400 text-xs tracking-widest px-4 py-2">📈 18.7% ROI Target</span>
+      <span class="inline-flex items-center gap-2 border border-amber-500/40 bg-amber-500/10 text-amber-400 text-xs tracking-widest px-4 py-2">🏛️ Asset-Backed Security</span>
+      <span class="inline-flex items-center gap-2 border border-amber-500/40 bg-amber-500/10 text-amber-400 text-xs tracking-widest px-4 py-2">📜 30+30 Year Leasehold</span>
+      <span class="inline-flex items-center gap-2 border border-amber-500/40 bg-amber-500/10 text-amber-400 text-xs tracking-widest px-4 py-2">📍 400m from Hospital Phase 2</span>
+    </div>
+
+    <p class="text-stone-500 text-base max-w-xl leading-relaxed mb-12" data-aos="fade-up" data-aos-delay="280">
+      <span class="lang-th">ผลตอบแทน <span class="text-amber-400 font-medium">15–18% ต่อปี</span> บนทำเลทองใกล้สถานที่ก่อสร้าง<span class="text-stone-200">โรงพยาบาลศูนย์อุดรธานี แห่งที่ 2</span> — อสังหาริมทรัพย์เฮลท์แคร์ที่หายากในตลาด</span>
+      <span class="lang-en">Target <span class="text-amber-400 font-medium">15–18% annual ROI</span> at a prime location near the <span class="text-stone-200">New Udon Thani Regional Medical Centre No. 2</span> — a rare healthcare real estate opportunity</span>
+    </p>
+
+    <!-- CTA buttons -->
+    <div class="flex flex-wrap gap-4" data-aos="fade-up" data-aos-delay="350">
+      <a href="#contact" class="btn-gold"><span class="lang-th">ขอรับ Investment Memo</span><span class="lang-en">Request Full Investment Memo</span></a>
+      <a href="#location" class="btn-outline"><span class="lang-th">ดูทำเลโครงการ</span><span class="lang-en">View Project Location</span></a>
+    </div>
+
+    <!-- Quick stats strip -->
+    <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-px border border-amber-500/10"
+         data-aos="fade-up" data-aos-delay="450">
+      <div class="bg-slate-900/60 backdrop-blur px-6 py-5 border-r border-amber-500/10">
+        <p class="section-label mb-1">ROI</p>
+        <p class="font-display text-3xl text-amber-400">15–18%</p>
+        <p class="text-stone-500 text-xs mt-1"><span class="lang-th">ต่อปี</span><span class="lang-en">per year</span></p>
+      </div>
+      <div class="bg-slate-900/60 backdrop-blur px-6 py-5 border-r border-amber-500/10">
+        <p class="section-label mb-1">Total Investment</p>
+        <p class="font-display text-3xl text-stone-100">12<span class="text-amber-400">M</span></p>
+        <p class="text-stone-500 text-xs mt-1"><span class="lang-th">บาท</span><span class="lang-en">THB</span></p>
+      </div>
+      <div class="bg-slate-900/60 backdrop-blur px-6 py-5 border-r border-amber-500/10">
+        <p class="section-label mb-1">Payback</p>
+        <p class="font-display text-3xl text-stone-100">~5 <span class="text-amber-400 text-xl">ปี</span></p>
+        <p class="text-stone-500 text-xs mt-1"><span class="lang-th">คืนทุน</span><span class="lang-en">Payback</span></p>
+      </div>
+      <div class="bg-slate-900/60 backdrop-blur px-6 py-5">
+        <p class="section-label mb-1">Distance</p>
+        <p class="font-display text-3xl text-stone-100">400<span class="text-amber-400 text-xl">m</span></p>
+        <p class="text-stone-500 text-xs mt-1"><span class="lang-th">จากโรงพยาบาลศูนย์ฯ</span><span class="lang-en">from Hospital</span></p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
+    <span class="section-label text-xs">Scroll</span>
+    <div class="w-px h-10 bg-gradient-to-b from-amber-500 to-transparent animate-pulse"></div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════
+     LOCATION
+══════════════════════════════════════════════════════════════ -->
+<section id="location" class="py-28 px-6 md:px-12 max-w-6xl mx-auto">
+  <div class="grid md:grid-cols-2 gap-16 items-center">
+
+    <div data-aos="fade-right">
+      <p class="section-label mb-4"><span class="lang-th">ทำเลยุทธศาสตร์</span><span class="lang-en">Strategic Location</span></p>
+      <div class="gold-line-left mb-6"></div>
+      <h2 class="section-title mb-6">
+        <span class="lang-th">ทำเลยุทธศาสตร์<br /><span class="text-amber-400">Medical Hub</span></span>
+        <span class="lang-en">Strategic Location<br /><span class="text-amber-400">Medical Hub</span></span>
+      </h2>
+      <p class="text-stone-400 leading-relaxed mb-10 text-sm">
+        บ้านเจ้าคุณ ออนเซ็นตั้งอยู่ในทำเลที่หาได้ยากยิ่ง — ใกล้
+        <strong class="text-stone-200">สถานที่ก่อสร้างโรงพยาบาลศูนย์อุดรธานี แห่งที่ 2</strong> และ
+        <strong class="text-stone-200">15 นาทีจากท่าอากาศยาน</strong> สร้างฐานลูกค้าที่แข็งแกร่งจากกลุ่ม Medical Long-stay ทั้งชาวไทยและต่างชาติ
+      </p>
+      <div class="space-y-4">
+        <div class="flex items-center gap-4">
+          <div class="icon-circle">🏥</div>
+          <div>
+            <p class="text-stone-100 font-medium text-sm"><span class="lang-th">สถานที่ก่อสร้างโรงพยาบาลศูนย์อุดรธานี แห่งที่ 2</span><span class="lang-en">New Udon Thani Medical Centre No.2</span></p>
+            <p class="text-amber-400 text-xs mt-0.5"><span class="lang-th">ใกล้จุดก่อสร้าง · ทำเลทอง</span><span class="lang-en">Adjacent Construction Site · Prime Location</span></p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="icon-circle">✈️</div>
+          <div>
+            <p class="text-stone-100 font-medium text-sm"><span class="lang-th">ท่าอากาศยานอุดรธานี</span><span class="lang-en">Udon Thani Airport</span></p>
+            <p class="text-amber-400 text-xs mt-0.5"><span class="lang-th">15 นาที · เส้นทาง AEC</span><span class="lang-en">15 min · AEC Route</span></p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="icon-circle">🛂</div>
+          <div>
+            <p class="text-stone-100 font-medium text-sm"><span class="lang-th">ด่านพรมแดนหนองคาย (ลาว)</span><span class="lang-en">Nong Khai Border (Laos)</span></p>
+            <p class="text-amber-400 text-xs mt-0.5"><span class="lang-th">55 กม. · ประตูสู่ GMS</span><span class="lang-en">55 km · Gateway to GMS</span></p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="icon-circle">🏢</div>
+          <div>
+            <p class="text-stone-100 font-medium text-sm"><span class="lang-th">Central Plaza & ย่านธุรกิจ</span><span class="lang-en">Central Plaza & Business District</span></p>
+            <p class="text-amber-400 text-xs mt-0.5"><span class="lang-th">10 นาที · ครบครันสิ่งอำนวยความสะดวก</span><span class="lang-en">10 min · Full Amenities</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div data-aos="fade-left" data-aos-delay="150">
+      <div class="map-wrapper" style="height:420px;">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.579785883601!2d102.8149375!3d17.3358125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3123757d16b347cb%3A0xae589b94337129b5!2sBanChaoKhun%20Furniture!5e0!3m2!1sen!2sth!4v1776351982816!5m2!1sen!2sth"
+          width="100%" height="100%" style="border:0;"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="BanChaoKhun Location Map">
+        </iframe>
+      </div>
+      <p class="text-stone-500 text-xs text-right mt-2">📍 <span class="lang-th">ที่ตั้งโครงการ · บ้านเจ้าคุณ เฟอร์นิเจอร์</span><span class="lang-en">Project Location · BanChaoKhun Furniture</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════
+     PROJECT OVERVIEW
+══════════════════════════════════════════════════════════════ -->
+<section id="project" class="py-28 bg-slate-800/30 border-t border-b border-amber-500/10">
+  <div class="max-w-6xl mx-auto px-6 md:px-12">
+
+    <div class="text-center mb-16" data-aos="fade-up">
+      <p class="section-label mb-4"><span class="lang-th">สินทรัพย์จริง</span><span class="lang-en">Physical Asset</span></p>
+      <div class="gold-line mb-6"></div>
+      <h2 class="section-title"><span class="lang-th">ภาพรวมโครงการ</span><span class="lang-en">Project Overview</span></h2>
+    </div>
+
+    <!-- Construction Status -->
+    <div class="stat-card p-8 mb-12" data-aos="fade-up" data-aos-delay="100">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-6">
+        <div>
+          <p class="section-label mb-2"><span class="lang-th">สถานะก่อสร้าง</span><span class="lang-en">Construction Status</span></p>
+          <p class="font-display text-4xl text-stone-100">70<span class="text-amber-400">%</span></p>
+          <p class="text-stone-400 text-sm mt-1"><span class="lang-th">โครงสร้างหลักเสร็จสมบูรณ์ — พร้อมรับงาน Interior & Spa</span><span class="lang-en">Main structure complete — Ready for Interior & Spa works</span></p>
+        </div>
+        <div class="grid grid-cols-3 gap-6 text-center">
+          <div><p class="font-display text-2xl text-amber-400">12</p><p class="text-stone-500 text-xs mt-1"><span class="lang-th">ห้องพัก</span><span class="lang-en">Rooms</span></p></div>
+          <div><p class="font-display text-2xl text-amber-400">3</p><p class="text-stone-500 text-xs mt-1"><span class="lang-th">สระออนเซ็น</span><span class="lang-en">Onsen Pools</span></p></div>
+          <div><p class="font-display text-2xl text-amber-400">480</p><p class="text-stone-500 text-xs mt-1"><span class="lang-th">ตร.ม.</span><span class="lang-en">sq.m.</span></p></div>
+        </div>
+      </div>
+      <div class="space-y-3">
+        <div><div class="flex justify-between text-xs text-stone-500 mb-1"><span><span class="lang-th">โครงสร้าง & ฐานราก</span><span class="lang-en">Structure & Foundation</span></span><span class="text-amber-400">100%</span></div><div class="progress-bar"><div class="progress-fill" data-width="100"></div></div></div>
+        <div><div class="flex justify-between text-xs text-stone-500 mb-1"><span><span class="lang-th">ผนัง หลังคา & ระบบ MEP</span><span class="lang-en">Walls, Roof & MEP Systems</span></span><span class="text-amber-400">85%</span></div><div class="progress-bar"><div class="progress-fill" data-width="85"></div></div></div>
+        <div><div class="flex justify-between text-xs text-stone-500 mb-1"><span>Interior & Onsen Installation</span><span class="text-amber-400">40%</span></div><div class="progress-bar"><div class="progress-fill" data-width="40"></div></div></div>
+        <div><div class="flex justify-between text-xs text-stone-500 mb-1"><span>Landscaping & Soft Furnishings</span><span class="text-amber-400">10%</span></div><div class="progress-bar"><div class="progress-fill" data-width="10"></div></div></div>
+      </div>
+    </div>
+
+    <!-- Photo Gallery -->
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-3" data-aos="fade-up" data-aos-delay="200">
+      <div class="gallery-img col-span-2" style="height:260px;">
+        <img src="images/gallery-1.jpg" onerror="this.src='https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=900&q=75'" alt="Onsen Suite Concept" loading="lazy" />
+        <div class="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-slate-900/80 to-transparent"><span class="text-xs text-stone-300 tracking-wide">Onsen Suite Concept</span></div>
+      </div>
+      <div class="gallery-img" style="height:260px;">
+        <img src="images/gallery-2.jpg" onerror="this.src='https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=75'" alt="Wellness Pool" loading="lazy" />
+        <div class="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-slate-900/80 to-transparent"><span class="text-xs text-stone-300 tracking-wide">Wellness Pool</span></div>
+      </div>
+      <div class="gallery-img" style="height:200px;">
+        <img src="images/gallery-3.jpg" onerror="this.src='https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&q=75'" alt="Medical Spa" loading="lazy" />
+        <div class="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-slate-900/80 to-transparent"><span class="text-xs text-stone-300 tracking-wide">Medical Spa</span></div>
+      </div>
+      <div class="gallery-img" style="height:200px;">
+        <img src="images/gallery-4.jpg" onerror="this.src='https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&q=75'" alt="Premium Suite" loading="lazy" />
+        <div class="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-slate-900/80 to-transparent"><span class="text-xs text-stone-300 tracking-wide">Premium Suite</span></div>
+      </div>
+      <div class="gallery-img" style="height:200px;">
+        <img src="images/gallery-5.jpg" onerror="this.src='https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&q=75'" alt="Exterior" loading="lazy" />
+        <div class="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-slate-900/80 to-transparent"><span class="text-xs text-stone-300 tracking-wide">Exterior Render</span></div>
+      </div>
+    </div>
+    <p class="text-stone-500 text-xs text-center mt-4">
+      <span class="lang-th">* ภาพประกอบ Concept — ภาพก่อสร้างจริงมีใน Full Investment Memo</span>
+      <span class="lang-en">* Concept renders — Actual progress photos available in Full Investment Memo</span>
+    </p>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════
+     FINANCIAL MODEL
+══════════════════════════════════════════════════════════════ -->
+<section id="financials" class="py-28 px-6 md:px-12 max-w-6xl mx-auto">
+
+  <div class="text-center mb-16" data-aos="fade-up">
+    <p class="section-label mb-4"><span class="lang-th">ตัวเลขการลงทุน</span><span class="lang-en">Investment Numbers</span></p>
+    <div class="gold-line mb-6"></div>
+    <h2 class="section-title"><span class="lang-th">โมเดลการเงิน</span><span class="lang-en">Financial Model</span></h2>
+    <p class="text-stone-500 text-sm mt-4 max-w-xl mx-auto">
+      <span class="lang-th">ตัวเลขที่โปร่งใส ตรวจสอบได้ — บนฐานรายได้จาก Medical Stay, Onsen, และ Wellness Services</span>
+      <span class="lang-en">Transparent, verifiable numbers — based on Medical Stay, Onsen, and Wellness Services revenue</span>
+    </p>
+  </div>
+
+  <!-- Key metrics -->
+  <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+    <div class="stat-card p-6 text-center" data-aos="fade-up" data-aos-delay="0">
+      <p class="section-label mb-3"><span class="lang-th">เงินลงทุนรวม</span><span class="lang-en">Total Capital</span></p>
+      <p class="font-display text-4xl text-stone-100"><span class="count-up" data-target="12">0</span><span class="text-amber-400">M</span></p>
+      <p class="text-stone-500 text-xs mt-2"><span class="lang-th">บาท</span><span class="lang-en">THB Total</span></p>
+    </div>
+    <div class="stat-card p-6 text-center" data-aos="fade-up" data-aos-delay="80">
+      <p class="section-label mb-3"><span class="lang-th">เป้าหมาย ROI</span><span class="lang-en">Target ROI</span></p>
+      <p class="font-display text-4xl text-amber-400">15–18<span class="text-2xl">%</span></p>
+      <p class="text-stone-500 text-xs mt-2"><span class="lang-th">ต่อปี</span><span class="lang-en">per year</span></p>
+    </div>
+    <div class="stat-card p-6 text-center" data-aos="fade-up" data-aos-delay="160">
+      <p class="section-label mb-3">Annual Revenue</p>
+      <p class="font-display text-4xl text-stone-100">3–4<span class="text-amber-400">M</span></p>
+      <p class="text-stone-500 text-xs mt-2"><span class="lang-th">บาท/ปี (ประมาณการ)</span><span class="lang-en">THB/year (Forecast)</span></p>
+    </div>
+    <div class="stat-card p-6 text-center" data-aos="fade-up" data-aos-delay="240">
+      <p class="section-label mb-3">Payback Period</p>
+      <p class="font-display text-4xl text-stone-100">~5 <span class="text-amber-400 text-2xl">ปี</span></p>
+      <p class="text-stone-500 text-xs mt-2"><span class="lang-th">ระยะเวลาคืนทุน</span><span class="lang-en">Payback Period</span></p>
+    </div>
+  </div>
+
+  <!-- Investment Structure + Revenue Forecast -->
+  <div class="grid md:grid-cols-2 gap-8">
+    <div class="stat-card p-8" data-aos="fade-right">
+      <p class="section-label mb-6"><span class="lang-th">โครงสร้างการลงทุน</span><span class="lang-en">Investment Structure</span></p>
+      <div class="flex items-center gap-8">
+        <svg viewBox="0 0 120 120" class="w-36 h-36 flex-shrink-0">
+          <circle cx="60" cy="60" r="46" fill="none" stroke="#1e293b" stroke-width="20"/>
+          <circle cx="60" cy="60" r="46" fill="none" stroke="#f59e0b" stroke-width="20" stroke-dasharray="130 289" stroke-dashoffset="0" transform="rotate(-90 60 60)"/>
+          <circle cx="60" cy="60" r="46" fill="none" stroke="#fcd34d" stroke-width="20" stroke-dasharray="72 347" stroke-dashoffset="-130" transform="rotate(-90 60 60)"/>
+          <circle cx="60" cy="60" r="46" fill="none" stroke="#78716c" stroke-width="20" stroke-dasharray="87 332" stroke-dashoffset="-202" transform="rotate(-90 60 60)"/>
+          <text x="60" y="55" text-anchor="middle" fill="#f5f5f4" font-size="9" font-family="Sarabun">Total</text>
+          <text x="60" y="70" text-anchor="middle" fill="#f59e0b" font-size="12" font-family="Cormorant Garamond" font-weight="600">12M</text>
+        </svg>
+        <div class="space-y-3 text-sm">
+          <div class="flex items-center gap-3"><div class="legend-dot" style="background:#f59e0b;"></div><div><p class="text-stone-200 font-medium">Common Share — 45%</p><p class="text-stone-500 text-xs"><span class="lang-th">5.4M บาท · ผู้ถือหุ้นทั่วไป</span><span class="lang-en">5.4M THB · General Investors</span></p></div></div>
+          <div class="flex items-center gap-3"><div class="legend-dot" style="background:#fcd34d;"></div><div><p class="text-stone-200 font-medium">Preferred Share — 25%</p><p class="text-stone-500 text-xs"><span class="lang-th">3.0M บาท · ปันผลสิทธิพิเศษ</span><span class="lang-en">3.0M THB · Preferred Dividend</span></p></div></div>
+          <div class="flex items-center gap-3"><div class="legend-dot" style="background:#78716c;"></div><div><p class="text-stone-200 font-medium">Founder Share — 30%</p><p class="text-stone-500 text-xs"><span class="lang-th">3.6M บาท · ผู้ก่อตั้ง</span><span class="lang-en">3.6M THB · Founder</span></p></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stat-card p-8" data-aos="fade-left" data-aos-delay="100">
+      <p class="section-label mb-6"><span class="lang-th">ประมาณการรายได้ (บาท/ปี)</span><span class="lang-en">Revenue Forecast (THB/year)</span></p>
+      <div class="space-y-4">
+        <div><div class="flex justify-between text-xs mb-1"><span class="text-stone-400">Medical Long-stay</span><span class="text-amber-400">1,800,000</span></div><div class="progress-bar"><div class="progress-fill" data-width="75"></div></div></div>
+        <div><div class="flex justify-between text-xs mb-1"><span class="text-stone-400">Private Onsen & Spa</span><span class="text-amber-400">900,000</span></div><div class="progress-bar"><div class="progress-fill" data-width="38"></div></div></div>
+        <div><div class="flex justify-between text-xs mb-1"><span class="text-stone-400">Wellness Services</span><span class="text-amber-400">480,000</span></div><div class="progress-bar"><div class="progress-fill" data-width="20"></div></div></div>
+        <div><div class="flex justify-between text-xs mb-1"><span class="text-stone-400">Concierge & Visa Support</span><span class="text-amber-400">320,000</span></div><div class="progress-bar"><div class="progress-fill" data-width="13"></div></div></div>
+        <div class="border-t border-amber-500/20 pt-3 mt-4"><div class="flex justify-between"><span class="text-stone-300 font-medium text-sm"><span class="lang-th">รวมรายได้ประมาณการ</span><span class="lang-en">Total Revenue Forecast</span></span><span class="text-amber-400 font-display text-xl">3.5M+</span></div></div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════
+     ROI CALCULATOR
+══════════════════════════════════════════════════════════════ -->
+<section id="calculator" class="py-28 px-6 md:px-12 max-w-6xl mx-auto">
+  <div class="text-center mb-16" data-aos="fade-up">
+    <p class="section-label mb-4"><span class="lang-th">คำนวณผลตอบแทนของคุณ</span><span class="lang-en">Calculate Your Return</span></p>
+    <div class="gold-line mb-6"></div>
+    <h2 class="section-title">ROI Calculator</h2>
+    <p class="text-stone-500 text-sm mt-4 max-w-xl mx-auto">
+      <span class="lang-th">ปรับค่าตามสถานการณ์ของคุณเพื่อดูผลตอบแทนที่คาดหวัง</span>
+      <span class="lang-en">Adjust parameters to model your expected investment return</span>
+    </p>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-8 items-start">
+    <!-- Inputs -->
+    <div class="stat-card p-8" data-aos="fade-right">
+      <p class="section-label mb-6"><span class="lang-th">ปรับค่าตัวแปร</span><span class="lang-en">Adjust Parameters</span></p>
+
+      <div class="mb-7">
+        <div class="flex justify-between items-center mb-2">
+          <label class="text-stone-300 text-sm"><span class="lang-th">มูลค่าการลงทุน (บาท)</span><span class="lang-en">Investment Amount (THB)</span></label>
+          <span id="calc-invest-val" class="text-amber-400 font-display text-lg">3M</span>
+        </div>
+        <input type="range" id="calc-invest" min="500000" max="12000000" step="500000" value="3000000"
+          class="w-full h-1 appearance-none rounded-full cursor-pointer"
+          style="accent-color:#f59e0b;" oninput="calcROI()" />
+        <div class="flex justify-between text-stone-600 text-xs mt-1"><span>500K</span><span>12M</span></div>
+      </div>
+
+      <div class="mb-7">
+        <div class="flex justify-between items-center mb-2">
+          <label class="text-stone-300 text-sm"><span class="lang-th">อัตราการเข้าพัก</span><span class="lang-en">Occupancy Rate</span></label>
+          <span id="calc-occ-val" class="text-amber-400 font-display text-lg">70%</span>
+        </div>
+        <input type="range" id="calc-occ" min="40" max="95" step="5" value="70"
+          class="w-full h-1 appearance-none rounded-full cursor-pointer"
+          style="accent-color:#f59e0b;" oninput="calcROI()" />
+        <div class="flex justify-between text-stone-600 text-xs mt-1"><span>40%</span><span>95%</span></div>
+      </div>
+
+      <div class="mb-7">
+        <div class="flex justify-between items-center mb-2">
+          <label class="text-stone-300 text-sm"><span class="lang-th">ประเภทหุ้น</span><span class="lang-en">Share Type</span></label>
+          <span id="calc-type-label" class="text-amber-400 text-xs tracking-widest">PREFERRED</span>
+        </div>
+        <div class="grid grid-cols-2 gap-2">
+          <button onclick="setShareType('preferred')" id="btn-preferred"
+            style="border:1px solid #f59e0b;background:rgba(245,158,11,0.15);color:#f59e0b;font-family:Sarabun,sans-serif;padding:0.5rem 1rem;font-size:0.75rem;letter-spacing:0.05em;cursor:pointer;">
+            <span class="lang-th">หุ้นบุริมสิทธิ</span><span class="lang-en">Preferred</span>
+          </button>
+          <button onclick="setShareType('common')" id="btn-common"
+            style="border:1px solid rgba(245,158,11,0.2);color:#78716c;font-family:Sarabun,sans-serif;padding:0.5rem 1rem;font-size:0.75rem;letter-spacing:0.05em;cursor:pointer;">
+            <span class="lang-th">หุ้นสามัญ</span><span class="lang-en">Common</span>
+          </button>
+        </div>
+      </div>
+
+      <p class="text-stone-600 text-xs leading-relaxed">
+        <span class="lang-th">* คำนวณบนฐาน EBITDA Margin 55% และรายได้รวมประมาณการ 3.5M บาท/ปี ที่ Occupancy 70%</span>
+        <span class="lang-en">* Based on 55% EBITDA margin and total revenue projection of 3.5M THB/year at 70% occupancy</span>
+      </p>
+    </div>
+
+    <!-- Outputs -->
+    <div class="space-y-4" data-aos="fade-left" data-aos-delay="100">
+      <div class="stat-card p-6 text-center">
+        <p class="section-label mb-2"><span class="lang-th">ผลตอบแทนต่อปี</span><span class="lang-en">Annual ROI</span></p>
+        <p class="font-display text-6xl text-amber-400" id="out-roi">18.7<span style="font-size:1.875rem">%</span></p>
+        <div class="progress-bar mt-4 mx-auto" style="max-width:200px;"><div class="progress-fill" id="out-roi-bar" style="width:0%;"></div></div>
+      </div>
+      <div class="stat-card p-6 text-center">
+        <p class="section-label mb-2"><span class="lang-th">กำไรสุทธิต่อปี</span><span class="lang-en">Net Profit / Year</span></p>
+        <p class="font-display text-4xl text-stone-100" id="out-profit">561,000 <span class="text-amber-400 text-2xl">฿</span></p>
+      </div>
+      <div class="stat-card p-6 text-center">
+        <p class="section-label mb-2"><span class="lang-th">ระยะเวลาคืนทุน</span><span class="lang-en">Payback Period</span></p>
+        <p class="font-display text-4xl text-stone-100" id="out-payback">5.3 <span class="text-amber-400 text-2xl">ปี</span></p>
+      </div>
+      <div class="stat-card p-6 border border-amber-500/30 text-center">
+        <p class="section-label mb-2"><span class="lang-th">ผลตอบแทนสะสม 5 ปี</span><span class="lang-en">5-Year Total Return</span></p>
+        <p class="font-display text-4xl text-amber-400" id="out-5yr">2.81M <span class="text-2xl">฿</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════
+     BUSINESS MODEL
+══════════════════════════════════════════════════════════════ -->
+<section id="model" class="py-28 bg-slate-800/30 border-t border-b border-amber-500/10">
+  <div class="max-w-6xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <p class="section-label mb-4"><span class="lang-th">เครื่องยนต์รายได้</span><span class="lang-en">Revenue Engine</span></p>
+      <div class="gold-line mb-6"></div>
+      <h2 class="section-title"><span class="lang-th">โมเดลธุรกิจ</span><span class="lang-en">Business Model</span></h2>
+      <p class="text-stone-500 text-sm mt-4"><span class="lang-th">รายได้หลาย Stream ที่เสริมกัน สร้างความมั่นคงให้กับผลตอบแทน</span><span class="lang-en">Multiple complementary revenue streams building stable returns</span></p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="stat-card p-7" data-aos="fade-up" data-aos-delay="0"><div class="text-3xl mb-5">🏥</div><h3 class="text-stone-100 font-medium text-base mb-3">Medical Long-stay</h3><p class="text-stone-500 text-sm leading-relaxed"><span class="lang-th">รองรับผู้ป่วยและญาติที่ต้องพักฟื้นใกล้ รพ.ศูนย์ฯ — Demand ที่มั่นคงตลอดปี ทั้งชาวไทยและ AEC</span><span class="lang-en">Accommodating patients and families near the Regional Hospital — stable demand year-round from Thai and AEC markets</span></p><div class="mt-5 pt-5 border-t border-amber-500/15"><p class="text-amber-400 text-xs">Occupancy Target: <strong>70%+</strong></p></div></div>
+      <div class="stat-card p-7" data-aos="fade-up" data-aos-delay="80"><div class="text-3xl mb-5">♨️</div><h3 class="text-stone-100 font-medium text-base mb-3">Private Onsen</h3><p class="text-stone-500 text-sm leading-relaxed"><span class="lang-th">บ่อน้ำแร่ร้อนแบบ Private ที่หาได้ยากในภาคอีสาน สร้าง Premium Differentiation และ Pricing Power</span><span class="lang-en">Rare private mineral hot-spring baths in Isan — creating premium differentiation and pricing power</span></p><div class="mt-5 pt-5 border-t border-amber-500/15"><p class="text-amber-400 text-xs">ADR Target: <strong>4,500 ฿/คืน</strong></p></div></div>
+      <div class="stat-card p-7" data-aos="fade-up" data-aos-delay="160"><div class="text-3xl mb-5">🧘</div><h3 class="text-stone-100 font-medium text-base mb-3">Wellness Services</h3><p class="text-stone-500 text-sm leading-relaxed"><span class="lang-th">แพ็คเกจ Holistic Wellness, นวดไทย, Aromatherapy ที่ตอบโจทย์ตลาด Medical Tourism ระดับสากล</span><span class="lang-en">Holistic Wellness packages, Thai massage, and Aromatherapy catering to international Medical Tourism markets</span></p><div class="mt-5 pt-5 border-t border-amber-500/15"><p class="text-amber-400 text-xs">Upsell Rate: <strong>60%+</strong></p></div></div>
+      <div class="stat-card p-7" data-aos="fade-up" data-aos-delay="240"><div class="text-3xl mb-5">🛂</div><h3 class="text-stone-100 font-medium text-base mb-3">Concierge & Visa</h3><p class="text-stone-500 text-sm leading-relaxed"><span class="lang-th">บริการ Visa Support, Transportation, และ Cross-border Coordination สำหรับแขกจากลาว เวียดนาม จีน</span><span class="lang-en">Visa support, transportation, and cross-border coordination for guests from Laos, Vietnam, and China</span></p><div class="mt-5 pt-5 border-t border-amber-500/15"><p class="text-amber-400 text-xs">Cross-border Clients: <strong>30%</strong></p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════
+     USE OF FUNDS & EXIT STRATEGY
+══════════════════════════════════════════════════════════════ -->
+<section id="funds" class="py-28 px-6 md:px-12 max-w-6xl mx-auto">
+  <div class="grid md:grid-cols-2 gap-16">
+
+    <!-- Use of Funds — Animated Donut -->
+    <div data-aos="fade-right">
+      <p class="section-label mb-4"><span class="lang-th">การจัดสรรเงินทุน</span><span class="lang-en">Capital Allocation</span></p>
+      <div class="gold-line-left mb-6"></div>
+      <h2 class="section-title mb-10"><span class="lang-th">การใช้เงินลงทุน 12 ล้าน</span><span class="lang-en">Use of 12M Funds</span></h2>
+      <div class="flex flex-col sm:flex-row items-center gap-8 mb-8">
+        <div class="relative flex-shrink-0">
+          <svg viewBox="0 0 160 160" class="w-40 h-40">
+            <circle cx="80" cy="80" r="58" fill="none" stroke="#1e293b" stroke-width="24"/>
+            <circle cx="80" cy="80" r="58" fill="none" stroke="#f59e0b" stroke-width="24" stroke-dasharray="0 364" stroke-dashoffset="91" transform="rotate(-90 80 80)" class="funds-arc" data-dash="244"/>
+            <circle cx="80" cy="80" r="58" fill="none" stroke="#fcd34d" stroke-width="24" stroke-dasharray="0 364" stroke-dashoffset="-153" transform="rotate(-90 80 80)" class="funds-arc" data-dash="62"/>
+            <circle cx="80" cy="80" r="58" fill="none" stroke="#78716c" stroke-width="24" stroke-dasharray="0 364" stroke-dashoffset="-215" transform="rotate(-90 80 80)" class="funds-arc" data-dash="58"/>
+            <text x="80" y="75" text-anchor="middle" fill="#f5f5f4" font-size="11" font-family="Sarabun">Total</text>
+            <text x="80" y="92" text-anchor="middle" fill="#f59e0b" font-size="15" font-family="Cormorant Garamond" font-weight="600">12M ฿</text>
+          </svg>
+        </div>
+        <div class="space-y-4 text-sm flex-1">
+          <div class="flex items-center gap-3"><div class="w-3 h-3 rounded-sm flex-shrink-0" style="background:#f59e0b;"></div><div class="flex-1"><div class="flex justify-between"><span class="text-stone-200 font-medium"><span class="lang-th">ชำระหนี้ที่ดิน</span><span class="lang-en">Debt Clearance</span></span><span class="text-amber-400 font-medium">8M · 67%</span></div><div class="progress-bar mt-1.5"><div class="progress-fill" data-width="67"></div></div><p class="text-stone-500 text-xs mt-1"><span class="lang-th">ปลดภาระหนี้ — ปลดล็อคทรัพย์สิน</span><span class="lang-en">Clear debt — unlock full asset security</span></p></div></div>
+          <div class="flex items-center gap-3"><div class="w-3 h-3 rounded-sm flex-shrink-0" style="background:#fcd34d;"></div><div class="flex-1"><div class="flex justify-between"><span class="text-stone-200 font-medium"><span class="lang-th">ก่อสร้างให้แล้วเสร็จ</span><span class="lang-en">Construction</span></span><span class="text-amber-400 font-medium">2M · 17%</span></div><div class="progress-bar mt-1.5"><div class="progress-fill" data-width="17"></div></div><p class="text-stone-500 text-xs mt-1"><span class="lang-th">Interior, Onsen, MEP ที่เหลือ</span><span class="lang-en">Interior, Onsen, remaining MEP</span></p></div></div>
+          <div class="flex items-center gap-3"><div class="w-3 h-3 rounded-sm flex-shrink-0" style="background:#78716c;"></div><div class="flex-1"><div class="flex justify-between"><span class="text-stone-200 font-medium"><span class="lang-th">เปิดตัวโครงการ</span><span class="lang-en">Brand & Launch</span></span><span class="text-amber-400 font-medium">2M · 17%</span></div><div class="progress-bar mt-1.5"><div class="progress-fill" data-width="17"></div></div><p class="text-stone-500 text-xs mt-1"><span class="lang-th">การตลาด, พนักงาน, Soft Opening</span><span class="lang-en">Marketing, Staff, Soft Opening</span></p></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exit Strategy -->
+    <div data-aos="fade-left" data-aos-delay="100">
+      <p class="section-label mb-4"><span class="lang-th">ผลตอบแทนนักลงทุน</span><span class="lang-en">Investor Returns</span></p>
+      <div class="gold-line-left mb-6"></div>
+      <h2 class="section-title mb-10"><span class="lang-th">กลยุทธ์การถอนทุน</span><span class="lang-en">Exit Strategy</span></h2>
+      <div class="space-y-6">
+        <div class="stat-card p-6"><div class="flex items-start gap-4"><div class="icon-circle mt-1">📊</div><div><h4 class="text-stone-100 font-medium mb-2"><span class="lang-th">ถือครองและรับปันผล</span><span class="lang-en">Hold & Annual Dividend</span></h4><p class="text-stone-500 text-sm leading-relaxed"><span class="lang-th">แผนหลัก: ถือครองสินทรัพย์และจ่ายปันผลรายปีแก่นักลงทุน ที่ ROI 15–18% เป็นระยะเวลา 5–7 ปี</span><span class="lang-en">Primary plan: Hold the asset and pay annual dividends to investors at 15–18% ROI over 5–7 years</span></p><p class="text-amber-400 text-xs mt-2 font-medium"><span class="lang-th">แผนหลัก · ปันผลสม่ำเสมอ</span><span class="lang-en">Primary Path · Consistent Dividends</span></p></div></div></div>
+        <div class="stat-card p-6"><div class="flex items-start gap-4"><div class="icon-circle mt-1">🏛️</div><div><h4 class="text-stone-100 font-medium mb-2"><span class="lang-th">ขายสินทรัพย์ / Strategic Exit</span><span class="lang-en">Asset Sale / Strategic Exit</span></h4><p class="text-stone-500 text-sm leading-relaxed"><span class="lang-th">แผนสำรอง: ขายสินทรัพย์ให้กับ Hotel Group หรือนักลงทุนกลุ่ม Healthcare Real Estate ในปีที่ 5–7 เมื่อ Asset มี Track Record ที่แข็งแกร่ง</span><span class="lang-en">Alternative: Sell to a Hotel Group or Healthcare REIT in years 5–7 once the asset has a strong track record</span></p><p class="text-amber-400 text-xs mt-2 font-medium"><span class="lang-th">แผนสำรอง · Capital Gain</span><span class="lang-en">Secondary Path · Capital Gain</span></p></div></div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════
+     FOUNDER PROFILE
+══════════════════════════════════════════════════════════════ -->
+<section id="founder" class="py-28 bg-slate-800/30 border-t border-b border-amber-500/10">
+  <div class="max-w-4xl mx-auto px-6 md:px-12 text-center">
+    <div data-aos="fade-up">
+      <p class="section-label mb-4"><span class="lang-th">ผู้นำโครงการ</span><span class="lang-en">Project Leadership</span></p>
+      <div class="gold-line mb-10"></div>
+      <div class="w-24 h-24 mx-auto mb-6 border-2 border-amber-500/30 overflow-hidden" style="border-radius:50%;">
+        <img src="images/logo.png" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" alt="Founder" class="w-full h-full object-cover" />
+        <div class="w-full h-full bg-slate-700 items-center justify-center hidden"><span class="text-amber-400 text-3xl font-display">บ</span></div>
+      </div>
+      <h2 class="section-title mb-2"><span class="lang-th">ผู้ก่อตั้งโครงการ</span><span class="lang-en">Project Founder</span></h2>
+      <p class="text-amber-400 text-sm tracking-widest mb-8">Founder & Project Developer</p>
+      <p class="text-stone-400 leading-relaxed max-w-2xl mx-auto mb-10">
+        <span class="lang-th">มีประสบการณ์กว่า</span><span class="lang-en">Over</span>
+        <strong class="text-stone-200"><span class="lang-th">15 ปี</span><span class="lang-en">15 years</span></strong>
+        <span class="lang-th">ในการพัฒนาอสังหาริมทรัพย์และธุรกิจบริการในภาคอีสาน พร้อมเครือข่ายกว้างขวางในกลุ่ม Cross-border Business ระหว่างไทย–ลาว–เวียดนาม และความเชี่ยวชาญเฉพาะด้าน</span><span class="lang-en">of real estate development and service business in Isan, with an extensive cross-border network across Thailand, Laos, and Vietnam, with specialized expertise in</span>
+        <strong class="text-stone-200">Medical Tourism & Wellness Real Estate</strong>
+      </p>
+      <div class="grid sm:grid-cols-3 gap-px border border-amber-500/10 max-w-xl mx-auto">
+        <div class="bg-slate-900/60 p-5"><p class="font-display text-3xl text-amber-400">15+</p><p class="text-stone-500 text-xs mt-1"><span class="lang-th">ปี ประสบการณ์</span><span class="lang-en">Years Experience</span></p></div>
+        <div class="bg-slate-900/60 p-5 border-x border-amber-500/10"><p class="font-display text-3xl text-amber-400">3</p><p class="text-stone-500 text-xs mt-1"><span class="lang-th">ประเทศ เครือข่าย</span><span class="lang-en">Countries Network</span></p></div>
+        <div class="bg-slate-900/60 p-5"><p class="font-display text-3xl text-amber-400">5+</p><p class="text-stone-500 text-xs mt-1"><span class="lang-th">โครงการที่ผ่านมา</span><span class="lang-en">Past Projects</span></p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════
+     VISA & LEGAL BENEFITS
+══════════════════════════════════════════════════════════════ -->
+<section id="legal" class="py-28 bg-slate-800/30 border-t border-b border-amber-500/10">
+  <div class="max-w-6xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <p class="section-label mb-4"><span class="lang-th">สิทธิประโยชน์ด้านกฎหมาย</span><span class="lang-en">Legal & Visa Benefits</span></p>
+      <div class="gold-line mb-6"></div>
+      <h2 class="section-title"><span class="lang-th">ความมั่นคงทางกฎหมาย</span><span class="lang-en">Legal Security</span></h2>
+      <p class="text-stone-500 text-sm mt-4 max-w-xl mx-auto"><span class="lang-th">สิทธิ์ที่ชัดเจน ป้องกันได้ตามกฎหมายไทย</span><span class="lang-en">Clear, legally protected rights under Thai law</span></p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="stat-card p-8" data-aos="fade-up" data-aos-delay="0"><div class="text-4xl mb-5">🛂</div><h3 class="text-stone-100 font-medium text-base mb-3">Investment Visa Ready</h3><p class="text-stone-500 text-sm leading-relaxed mb-4"><span class="lang-th">การลงทุน 10M บาทขึ้นไปมีสิทธิ์ขอ Non-Immigrant Visa B พร้อมสิทธิ์พำนักระยะยาวในประเทศไทย สำหรับนักลงทุนต่างชาติ</span><span class="lang-en">Investments of 10M+ THB qualify for Non-Immigrant Visa B with long-term residence rights in Thailand for foreign investors</span></p><div class="border-t border-amber-500/15 pt-4"><span class="text-amber-400 text-xs tracking-widest">VISA TYPE B · LONG-STAY</span></div></div>
+      <div class="stat-card p-8" data-aos="fade-up" data-aos-delay="80"><div class="text-4xl mb-5">📜</div><h3 class="text-stone-100 font-medium text-base mb-3"><span class="lang-th">Leasehold 30+30 ปี</span><span class="lang-en">Leasehold 30+30 Years</span></h3><p class="text-stone-500 text-sm leading-relaxed mb-4"><span class="lang-th">สัญญาเช่าระยะยาว 30+30 ปี จดทะเบียนที่กรมที่ดินอย่างถูกต้องตามกฎหมาย ให้ความมั่นคงเทียบเท่ากรรมสิทธิ์</span><span class="lang-en">A 30+30 year leasehold registered at the Land Department — providing near-ownership security and transferability</span></p><div class="border-t border-amber-500/15 pt-4 flex items-center gap-3"><div class="progress-bar flex-1"><div class="progress-fill" data-width="100"></div></div><span class="text-amber-400 text-xs whitespace-nowrap">60 ปี รวม</span></div></div>
+      <div class="stat-card p-8" data-aos="fade-up" data-aos-delay="160"><div class="text-4xl mb-5">⭐</div><h3 class="text-stone-100 font-medium text-base mb-3">Preferred Share Rights</h3><p class="text-stone-500 text-sm leading-relaxed mb-4"><span class="lang-th">หุ้นบุริมสิทธิรับปันผลก่อนหุ้นสามัญ สิทธิ์โหวตในเรื่องสำคัญ และสิทธิ์ชดเชยก่อนในกรณี Liquidation</span><span class="lang-en">Preferred shareholders receive dividends first, have priority voting rights, and first claim on assets in any liquidation</span></p><div class="border-t border-amber-500/15 pt-4"><span class="text-amber-400 text-xs tracking-widest">PRIORITY DIVIDEND · SENIOR CLAIM</span></div></div>
+      <div class="stat-card p-8" data-aos="fade-up" data-aos-delay="0"><div class="text-4xl mb-5">🏛️</div><h3 class="text-stone-100 font-medium text-base mb-3">Asset-Backed Security</h3><p class="text-stone-500 text-sm leading-relaxed mb-4"><span class="lang-th">เงินลงทุน 8M จาก 12M ใช้ปลดล็อคอสังหาริมทรัพย์โดยตรง ทำให้สินทรัพย์ปลอดภาระผูกพัน — ค้ำประกันด้วยของจริง</span><span class="lang-en">8M of the 12M directly clears real property debt — your investment is backed by a physical, unencumbered asset</span></p><div class="border-t border-amber-500/15 pt-4"><span class="text-amber-400 text-xs tracking-widest">REAL PROPERTY COLLATERAL</span></div></div>
+      <div class="stat-card p-8" data-aos="fade-up" data-aos-delay="80"><div class="text-4xl mb-5">⚖️</div><h3 class="text-stone-100 font-medium text-base mb-3"><span class="lang-th">สัญญาผู้ถือหุ้น</span><span class="lang-en">Shareholder Agreement</span></h3><p class="text-stone-500 text-sm leading-relaxed mb-4"><span class="lang-th">สัญญาผู้ถือหุ้นฉบับสมบูรณ์ ระบุสิทธิ์ หน้าที่ เงื่อนไขการจ่ายปันผล และกระบวนการ Exit ที่ชัดเจน</span><span class="lang-en">Comprehensive shareholder agreement defining rights, dividend conditions, and exit mechanisms for all investors</span></p><div class="border-t border-amber-500/15 pt-4"><span class="text-amber-400 text-xs tracking-widest">LEGALLY BINDING · THAI LAW</span></div></div>
+      <div class="stat-card p-8" data-aos="fade-up" data-aos-delay="160"><div class="text-4xl mb-5">💰</div><h3 class="text-stone-100 font-medium text-base mb-3"><span class="lang-th">ประโยชน์ด้านภาษี</span><span class="lang-en">Tax Efficiency</span></h3><p class="text-stone-500 text-sm leading-relaxed mb-4"><span class="lang-th">โครงสร้างบริษัทไทยที่ถูกต้องตามกฎหมาย ปันผลผ่านนิติบุคคลพร้อมอัตราภาษีที่เหมาะสม แนะนำให้ปรึกษาผู้เชี่ยวชาญด้านภาษีระหว่างประเทศ</span><span class="lang-en">Legitimate Thai company structure with dividends paid through a legal entity at favorable rates. International tax consultation recommended.</span></p><div class="border-t border-amber-500/15 pt-4"><span class="text-amber-400 text-xs tracking-widest">THAI COMPANY STRUCTURE</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════
+     CONTACT / LEAD CAPTURE
+══════════════════════════════════════════════════════════════ -->
+<section id="contact" class="py-28 px-6 md:px-12 max-w-6xl mx-auto">
+  <div class="grid md:grid-cols-2 gap-16 items-start">
+
+    <div data-aos="fade-right">
+      <p class="section-label mb-4"><span class="lang-th">ขั้นตอนต่อไป</span><span class="lang-en">Next Step</span></p>
+      <div class="gold-line-left mb-6"></div>
+      <h2 class="section-title mb-6">
+        <span class="lang-th">เริ่มต้น<br /><span class="text-amber-400">การสนทนา</span></span>
+        <span class="lang-en">Start the<br /><span class="text-amber-400">Conversation</span></span>
+      </h2>
+      <p class="text-stone-400 leading-relaxed text-sm mb-8">
+        <span class="lang-th">กรอกข้อมูลเพื่อรับ</span><span class="lang-en">Fill in your details to receive a</span>
+        <strong class="text-stone-200">Full Investment Memo</strong>
+        <span class="lang-th">ฉบับสมบูรณ์ พร้อม Financial Model, Due Diligence Documents, และ นัดหมาย Site Visit ส่วนตัว</span>
+        <span class="lang-en">complete with Financial Model, Due Diligence Documents, and a private Site Visit arrangement</span>
+      </p>
+      <div class="space-y-4 text-sm">
+        <div class="flex items-center gap-3 text-stone-400"><span class="text-amber-400">✓</span> <span class="lang-th">Financial Model & ประมาณการ (Excel)</span><span class="lang-en">Financial Model & Projections (Excel)</span></div>
+        <div class="flex items-center gap-3 text-stone-400"><span class="text-amber-400">✓</span> <span class="lang-th">สรุปโครงสร้างกฎหมายและโฉนดที่ดิน</span><span class="lang-en">Legal Structure & Title Deed Summary</span></div>
+        <div class="flex items-center gap-3 text-stone-400"><span class="text-amber-400">✓</span> <span class="lang-th">รายงานภาพถ่ายความคืบหน้าก่อสร้าง</span><span class="lang-en">Construction Progress Photo Report</span></div>
+        <div class="flex items-center gap-3 text-stone-400"><span class="text-amber-400">✓</span> <span class="lang-th">นัดหมาย Site Visit ส่วนตัว</span><span class="lang-en">Private Site Visit Arrangement</span></div>
+      </div>
+      <!-- PDF Downloads -->
+      <div class="mt-10 flex flex-col sm:flex-row gap-3">
+        <a href="assets/pitch-deck.pdf" download class="btn-outline inline-flex items-center gap-3">
+          <span>⬇</span> <span class="lang-th">ดาวน์โหลด Pitch Deck</span><span class="lang-en">Download Pitch Deck</span>
+        </a>
+        <a href="assets/investment-memo.pdf" download class="btn-outline inline-flex items-center gap-3">
+          <span>📄</span> <span class="lang-th">Investment Memo</span><span class="lang-en">Investment Memo</span>
+        </a>
+      </div>
+    </div>
+
+    <div data-aos="fade-left" data-aos-delay="100">
+      <div class="stat-card p-8">
+        <form id="leadForm" onsubmit="handleSubmit(event)" novalidate>
+          <div class="space-y-4">
+            <div><label class="section-label block mb-2"><span class="lang-th">ชื่อ–นามสกุล *</span><span class="lang-en">Full Name *</span></label><input type="text" id="fname" class="form-input" placeholder="คุณ..." required /></div>
+            <div><label class="section-label block mb-2">Line ID *</label><input type="text" id="fline" class="form-input" placeholder="@lineid" required /></div>
+            <div><label class="section-label block mb-2"><span class="lang-th">เบอร์โทรศัพท์ *</span><span class="lang-en">Phone Number *</span></label><input type="tel" id="fphone" class="form-input" placeholder="08X-XXX-XXXX" required /></div>
+            <div>
+              <label class="section-label block mb-2"><span class="lang-th">งบลงทุนที่สนใจ</span><span class="lang-en">Investment Budget</span></label>
+              <select id="fbudget" class="form-input">
+                <option value="" style="background:#1e293b;"><span class="lang-th">-- เลือกช่วงงบ --</span><span class="lang-en">-- Select Budget Range --</span></option>
+                <option value="500k-1m" style="background:#1e293b;">500,000 – 1,000,000 บาท</option>
+                <option value="1m-3m"  style="background:#1e293b;">1,000,000 – 3,000,000 บาท</option>
+                <option value="3m-5m"  style="background:#1e293b;">3,000,000 – 5,000,000 บาท</option>
+                <option value="5m+"    style="background:#1e293b;">5,000,000 บาท ขึ้นไป</option>
+              </select>
+            </div>
+            <div><label class="section-label block mb-2"><span class="lang-th">ข้อความเพิ่มเติม</span><span class="lang-en">Additional Message</span></label><textarea id="fmessage" class="form-input" rows="3" placeholder="คำถาม หรือข้อมูลเพิ่มเติม..."></textarea></div>
+          </div>
+          <button type="submit" class="btn-gold w-full mt-6 text-center"><span class="lang-th">ส่งคำขอ Investment Memo</span><span class="lang-en">Request Investment Memo</span></button>
+          <p class="text-stone-600 text-xs text-center mt-4"><span class="lang-th">ข้อมูลของท่านจะถูกเก็บเป็นความลับ และใช้เพื่อการติดต่อกลับเท่านั้น</span><span class="lang-en">Your information is kept strictly confidential and used only for follow-up purposes.</span></p>
+        </form>
+        <div id="formSuccess" class="hidden text-center py-8">
+          <div class="text-4xl mb-4">✅</div>
+          <h3 class="font-display text-2xl text-stone-100 mb-2">ขอบคุณครับ/ค่ะ</h3>
+          <p class="text-stone-400 text-sm"><span class="lang-th">ทีมงานจะติดต่อกลับภายใน 24 ชั่วโมง</span><span class="lang-en">Our team will follow up within 24 hours.</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════════════════════ -->
+<footer class="border-t border-amber-500/10 py-12 px-6 md:px-12">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-8 mb-10">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 bg-amber-500/20 rounded-full flex items-center justify-center border border-amber-500/30">
+            <span class="text-amber-400 font-display text-lg">บ</span>
+          </div>
+          <span class="font-display text-stone-100 text-base tracking-widest">Baan Chao Khun Onsen</span>
+        </div>
+        <p class="text-stone-500 text-xs leading-relaxed"><span class="lang-th">สินทรัพย์ให้ผลตอบแทน · Medical Wellness · อุดรธานี ประเทศไทย</span><span class="lang-en">Private Yield Asset · Medical Wellness · Udon Thani, Thailand</span></p>
+      </div>
+      <div>
+        <p class="section-label mb-3"><span class="lang-th">ที่อยู่โครงการ</span><span class="lang-en">Project Address</span></p>
+        <p class="text-stone-500 text-xs leading-relaxed">211 หมู่ 3 ตำบลบ้านจั่น<br />อำเภอเมือง จังหวัดอุดรธานี 41000<br />(ใกล้สถานที่ก่อสร้างโรงพยาบาลศูนย์อุดรธานีแห่งที่ 2)</p>
+      </div>
+      <div>
+        <p class="section-label mb-3"><span class="lang-th">ติดต่อ</span><span class="lang-en">Contact</span></p>
+        <div class="space-y-2 text-xs text-stone-500">
+          <p>📱 Line: <a href="https://line.me/R/ti/p/@fbc4784z" target="_blank" class="hover:text-amber-400 transition-colors">@fbc4784z</a></p>
+          <p>📞 Tel: <a href="tel:+66855907666" class="hover:text-amber-400 transition-colors">+66 85 590 7666</a></p>
+          <p>✉️ <a href="mailto:banchaokhun@gmail.com" class="hover:text-amber-400 transition-colors">banchaokhun@gmail.com</a></p>
+        </div>
+        <div class="flex gap-4 mt-4">
+          <a href="https://line.me/R/ti/p/@fbc4784z" target="_blank" class="text-stone-500 hover:text-amber-400 transition-colors text-xs tracking-wider">LINE</a>
+          <a href="https://www.facebook.com/bannchaokhun/" target="_blank" class="text-stone-500 hover:text-amber-400 transition-colors text-xs tracking-wider">Facebook</a>
+          <a href="#" class="text-stone-500 hover:text-amber-400 transition-colors text-xs tracking-wider">YouTube</a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-amber-500/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-3">
+      <p class="text-stone-600 text-xs"><span class="lang-th">© 2025 Baan Chao Khun Onsen. สงวนลิขสิทธิ์.</span><span class="lang-en">© 2025 Baan Chao Khun Onsen. All Rights Reserved.</span></p>
+      <p class="text-stone-700 text-xs"><span class="lang-th">ข้อมูลในหน้านี้เป็นการนำเสนอเพื่อการลงทุนเท่านั้น ไม่ใช่การชักชวนให้ซื้อหลักทรัพย์</span><span class="lang-en">Information on this page is for investment presentation purposes only and does not constitute an offer of securities.</span></p>
+    </div>
+  </div>
+</footer>
+
+<!-- Project JavaScript (loaded last) -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
